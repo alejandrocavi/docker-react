@@ -10,14 +10,14 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: "eu-west-1"
+  region: "eu-west-2"
   app: "docker"
   env: "Docker-env"
-  bucket_name: "elasticbeanstalk-eu-west-1-743724042425"
-  bucket_path: "Docker-env"
+  bucket_name: "elasticbeanstalk-eu-west-2-743724042425"
+  bucket_path: "docker"
   on:
     brach: master
-  access_key_id: $AWS_ACCES_KEY
+  access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
 
